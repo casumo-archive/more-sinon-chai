@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel Howlett <dan@dancras.co.uk> (http://dancras.co.uk/)",
-  "license": "MIT"
+  "author": "Casumo <frontend@casumo.com> (https://www.casumo.com/)",
+  "license": "MIT",
+  "repository": "git@github.com:Casumo/more-sinon-chai.git"
 }
