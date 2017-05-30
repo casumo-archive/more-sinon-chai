@@ -1,0 +1,11 @@
+{
+  "name": "more-sinon-chai",
+  "version": "1.0.0",
+  "description": "Extra functionality for sinon and chai",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Howlett <dan@dancras.co.uk> (http://dancras.co.uk/)",
+  "license": "MIT"
+}
