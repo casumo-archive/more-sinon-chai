@@ -1,6 +1,6 @@
 {
   "name": "more-sinon-chai",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Extra functionality for sinon and chai",
   "main": "src/index.js",
   "scripts": {

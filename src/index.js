@@ -54,12 +54,14 @@ export function moreChai (_, Promise) {
         utils.addMethod(chai.Assertion.prototype, 'eventuallyBeCalled', function () {
             // eslint-disable-next-line no-underscore-dangle
             const stub = this._obj;
+            const originalInvoke = stub.defaultBehavior ? stub.defaultBehavior.invoke : _.noop;
 
             return new Promise((resolve) => {
 
-                stub.defaultBehavior = _.extend({
+                stub.defaultBehavior = _.extend(stub.defaultBehavior, {
                     invoke (context, args) {
                         resolve(_.toArray(args));
+                        return originalInvoke.call(this, context, args);
                     }
                 });
 
