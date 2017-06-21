@@ -81,3 +81,18 @@ it('should call stub after some time', () => {
 
 });
 ```
+
+
+## Releasing an update
+
+ - Update version in `package.json` to n.n.n
+ - Push / merge your changes to master
+ - `git checkout -b release-n.n.n`
+ - `yarn dist`
+ - `git add -f dist`
+ - `git commit -m "Release n.n.n"`
+ - `git tag n.n.n`
+ - `git push origin n.n.n`
+ - `npm login`
+ - `npm publish`
+ - Delete your local release branch at your leisure
