@@ -1,12 +1,17 @@
 {
   "name": "more-sinon-chai",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Extra functionality for sinon and chai",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "dist": "babel src --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Casumo <frontend@casumo.com> (https://www.casumo.com/)",
   "license": "MIT",
-  "repository": "git@github.com:Casumo/more-sinon-chai.git"
+  "repository": "git@github.com:Casumo/more-sinon-chai.git",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1"
+  }
 }
